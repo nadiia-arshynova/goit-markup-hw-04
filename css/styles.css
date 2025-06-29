@@ -8,7 +8,7 @@ body {
     background-color: #fff;
 }
 
-h1,h2,h3,h4,h5.p {
+h1,h2,h3,h4,h5,p {
     margin: 0;
 }
 
@@ -430,14 +430,12 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
-.footer-page .container {
-   margin-left: 156px;
-   max-width: 264px;
-    
-}
-
-.footer-page {
-    padding: 100px 0;
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 120px;
+  
 }
 
 .footer-logo .logo-part {
@@ -446,7 +444,7 @@ color: #434455;
 
 .footer-page {
     background: #2e2f42;
-    
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -454,15 +452,11 @@ color: #434455;
     margin-bottom: 16px;
 }
 
-.footer-container {
-    display: flex;
+.footer-content {
+    max-width: 264px;
     
-    align-items: baseline;
 }
 
-.footer-container .container {
-    margin-right: 120px;
-}
 
 .footer-text {
     font-weight: 400;
