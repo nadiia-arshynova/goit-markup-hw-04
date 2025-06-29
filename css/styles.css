@@ -1,3 +1,7 @@
+:root {
+  --color-light: #f4f4fd;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -309,7 +313,7 @@ text-align: center;
 }
 
 .social-icon {
-    fill: #f4f4fd;
+    fill: var(--color-light);
 }
 
 .icon-list {
@@ -328,13 +332,12 @@ width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-item:hover .team-icon-box
-.team-icon-item:focus .team-icon-box {
+.team-icon-item:hover .team-icon-box,
+.team-icon-item:focus-within .team-icon-box {
     background-color: #404bbf;
 }
 
@@ -428,7 +431,7 @@ color: #434455;
 .footer-page .container {
    margin-left: 156px;
    max-width: 264px;
-    margin-right: 120px;
+    
 }
 
 .footer-page {
@@ -455,6 +458,10 @@ color: #434455;
     align-items: baseline;
 }
 
+.footer-container .container {
+    margin-right: 120px;
+}
+
 .footer-text {
     font-weight: 400;
 font-size: 16px;
@@ -464,7 +471,7 @@ color: #f4f4fd;
 max-width: 264px;
 }
 
-.social-title {
+.footer-social-title {
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -496,7 +503,7 @@ margin-bottom: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon-item:hover .social-icon-box
-.social-icon-item:focus .social-icon-box {
+.social-icon-item:hover .social-icon-box,
+.social-icon-item:focus-within .social-icon-box {
     background-color: #31d0aa;
 }
