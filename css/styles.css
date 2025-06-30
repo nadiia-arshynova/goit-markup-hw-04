@@ -14,6 +14,8 @@ h1,h2,h3,h4,h5,p {
 
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -494,6 +496,7 @@ margin-bottom: 16px;
     width: 40px;
   height: 40px;
   border: none;
+  padding: 0;
   border-radius: 50%;
   fill: #fff;
   display: flex;
